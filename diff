@@ -1,1 +1,48 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>gg</title>
+  <style>
+    /* Helt svart bakgrund överallt */
+    html, body {
+      height: 100%;
+      margin: 0;
+      background-color: #000; /* svart */
+      color: #fff;            /* vit text */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    /* Centrerad, stor, fet text */
+    .center {
+      min-height: 100vh;                 /* täcker hela fönstrets höjd */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .gg {
+      font-size: clamp(48px, 18vw, 220px); /* responsiv storlek */
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin: 0;
+      line-height: 1;
+    }
+
+    /* För bättre kontrast på små skärmar */
+    @media (max-width: 420px) {
+      .gg { font-size: 72px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="center" role="main" aria-label="gg i mitten">
+    <h1 class="gg">gg</h1>
+  </main>
+</body>
+</html>
 
